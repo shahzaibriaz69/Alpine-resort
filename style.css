@@ -1,3 +1,6 @@
+:root {
+  --brand-color: #162b83;
+}
 * {
   margin: 0;
   padding: 0;
@@ -40,7 +43,7 @@
 }
 
 .nav-links li a:hover {
-  color: #1a365d;
+  color: var(--brand-color);
 }
 
 .social-links {
@@ -57,7 +60,7 @@
 }
 
 .social-links a:hover {
-  color: #1a365d;
+  color: var(--brand-color);
   opacity: 1;
   transform: scale(1.2);
 }
@@ -107,7 +110,7 @@
 }
 
 .btn-primary {
-  background: #1a365d;
+  background: var(--brand-color);
   color: white;
 }
 
@@ -120,4 +123,121 @@
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.rooms-section {
+  padding: 80px 10%;
+  background-color: #ffffff;
+  /* Adding the subtle topographic pattern seen in your image */
+  /* background-image: url("images/6724b558c29b17fde816e47a_optimized_1024_c1024x1024-0x0.webp"); */
+  position: relative;
+}
+
+.rooms-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.title-area {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.title-area .line {
+  width: 50px;
+  height: 1px;
+  background: var(--brand-color);
+}
+
+.section-header h2 {
+  font-size: 1.8rem;
+  color: #333;
+  font-weight: 800;
+}
+
+.section-header i {
+  color: var(--brand-color);
+  font-style: italic;
+}
+
+.btn-outline {
+  padding: 10px 20px;
+  border: 1px solid var(--brand-color);
+  color: var(--brand-color);
+  text-decoration: none;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.room-card {
+  text-align: center;
+}
+
+.room-image img {
+  width: 100%;
+  height: auto;
+  border: 8px solid white; /* The white frame in the image */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.room-card h3 {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.room-card span {
+  color: var(--brand-color);
+  font-size: 14px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+/* .price {
+  color: #1a365d;
+} */
+
+.specs {
+  font-size: 11px;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.6;
+  font-style: italic;
+  padding: 0 10px;
+}
+
+.nav-arrow {
+  position: absolute;
+  top: 60%;
+  font-size: 30px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.prev {
+  left: -50px;
+}
+.next {
+  right: -50px;
 }
