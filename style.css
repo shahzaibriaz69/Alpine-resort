@@ -13,7 +13,7 @@
   height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2)),
-    url("images/6724b1d518a4b2d886d1d3d4_optimized_1140_c1140x1140-0x0.webp");
+    url("images/skitting.webp");
   background-size: cover;
   background-position: center;
   color: white;
@@ -240,4 +240,219 @@
 }
 .next {
   right: -50px;
+}
+
+:root {
+  --navy: #1a365d;
+  --text-gray: #666;
+  --bg-light: #f9f9f9;
+}
+
+.split-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+.split-row {
+  display: flex;
+  width: 100%;
+  min-height: 550px; /* Exact height for the sections */
+}
+
+.split-row.row-reverse {
+  flex-direction: row-reverse;
+}
+
+/* Text Container */
+.split-text {
+  flex: 0 0 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.text-inner {
+  max-width: 500px;
+  padding: 60px;
+}
+
+/* Typography */
+.accent-line {
+  display: block;
+  width: 80px;
+  height: 3px;
+  background: rgb(155 155 155);
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #575555;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  letter-spacing: -0.5px;
+}
+
+h2 i {
+  color: var(--navy);
+  font-style: italic;
+}
+
+p {
+  font-size: 10px;
+  color: rgb(143 143 143);
+  /* line-height: 1.8; */
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 10px;
+  font-weight: 700;
+  color: #5d5d5d;
+}
+
+.btn-navy {
+  display: inline-block;
+  background: var(--navy);
+  color: white;
+  padding: 15px 35px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.check-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.check-list li {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--navy);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footer-text {
+  margin-top: 20px;
+}
+
+.split-image {
+  flex: 0 0 50%;
+  background-size: cover;
+  background-position: center;
+}
+
+.img-top {
+  background-image: url("images/chair_lift.webp");
+}
+
+.img-bottom {
+  background-image: url("images/skitting.webp");
+}
+
+.dining-section {
+  padding: 100px 10%;
+  background-color: #fff;
+}
+
+.dining-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.dining-text h2 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.dining-text h2 i {
+  color: #1a365d;
+  font-style: italic;
+}
+
+.dining-intro {
+  font-size: 14px;
+  color: #292929;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.dining-text h3 {
+  font-size: 16px;
+  color: #1a365d;
+  letter-spacing: 1px;
+  margin-bottom: 30px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 25px;
+}
+
+.menu-img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.menu-info {
+  flex: 1;
+}
+
+.menu-title-row {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.dish-name {
+  font-weight: 700;
+  font-size: 15px;
+  color: #333;
+}
+
+.dots {
+  flex: 1;
+  border-bottom: 1px solid #c3cfd9;
+  margin: 0 10px;
+  height: 0.7em;
+}
+
+.price {
+  font-weight: 800;
+  color: #1a365d;
+  font-size: 15px;
+}
+
+.dish-desc {
+  font-size: 13px;
+  color: #999;
+}
+
+.image-frame {
+  border: 15px solid #fff;
+}
+
+.image-frame img {
+  width: 60%;
+  display: block;
 }
