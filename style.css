@@ -21,6 +21,10 @@
   flex-direction: column;
 }
 
+.company-logo img {
+  height: 40;
+}
+
 .navbar {
   display: flex;
   justify-content: space-evenly;
@@ -821,4 +825,133 @@ p {
 .map-side {
   flex: 1;
   background: #e5e5e5;
+}
+
+.main-footer {
+  background-color: #2c2e3a; /* Dark charcoal color from image */
+  color: #ffffff;
+  padding: 60px 0 30px 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Top Branding Row */
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+.footer-logo span {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 2px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: underline;
+  margin-right: 20px;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.footer-socials {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+/* Bottom Grid Layout */
+.footer-bottom {
+  display: grid;
+  grid-template-columns: 1.5fr 1.5fr 1fr;
+  gap: 50px;
+  padding-top: 40px;
+}
+
+.footer-col h4 {
+  font-size: 11px;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-link {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 800;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+
+.contact-link.email {
+  font-size: 14px;
+}
+
+.copyright {
+  font-size: 10px;
+  color: rgba(255, 255, 255, 0.3);
+  margin-top: 40px;
+  letter-spacing: 1px;
+}
+
+/* Newsletter Form */
+.subscribe-form input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 10px 0;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.subscribe-form button {
+  width: 100%;
+  background: #1a3a8a;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-weight: 800;
+  font-size: 11px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/* Mini Gallery Grid */
+.mini-gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.mini-gallery img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.footer-divider {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
